@@ -1,0 +1,51 @@
+﻿CREATE TABLE [dbo].[EV_SF_TRANSACTION__C] (
+    [ID]                            NVARCHAR (18)   NULL,
+    [ISDELETED]                     INT             NULL,
+    [NAME]                          NVARCHAR (80)   NULL,
+    [CURRENCYISOCODE]               NVARCHAR (3)    NULL,
+    [CREATEDDATE]                   DATETIME        NULL,
+    [CREATEDBYID]                   NVARCHAR (18)   NULL,
+    [LASTMODIFIEDDATE]              DATETIME        NULL,
+    [LASTMODIFIEDBYID]              NVARCHAR (18)   NULL,
+    [SYSTEMMODSTAMP]                DATETIME        NULL,
+    [LASTVIEWEDDATE]                DATETIME        NULL,
+    [LASTREFERENCEDDATE]            DATETIME        NULL,
+    [CONNECTIONRECEIVEDID]          NVARCHAR (18)   NULL,
+    [CONNECTIONSENTID]              NVARCHAR (18)   NULL,
+    [BILL_TO_ACCOUNT__C]            NVARCHAR (18)   NULL,
+    [AMOUNT__C]                     DECIMAL (18, 2) NULL,
+    [APPLIED_INVOICES__C]           NVARCHAR (1000) NULL,
+    [CONTRACT__C]                   NVARCHAR (18)   NULL,
+    [CREATED_FROM__C]               NVARCHAR (18)   NULL,
+    [DATE__C]                       DATETIME        NULL,
+    [DISTRIBUTOR_CONTACT__C]        NVARCHAR (18)   NULL,
+    [DUE_DATE__C]                   DATETIME        NULL,
+    [END_USER__C]                   NVARCHAR (18)   NULL,
+    [MEMO__C]                       NTEXT           NULL,
+    [NETSUITE_ID__C]                NVARCHAR (15)   NULL,
+    [NUMBER__C]                     NVARCHAR (40)   NULL,
+    [OPPORTUNITY__C]                NVARCHAR (18)   NULL,
+    [ORDER_FULFILLMENT_COMPLETE__C] INT             NULL,
+    [ORDER_TYPE__C]                 NVARCHAR (255)  NULL,
+    [PO_CHECK__C]                   NVARCHAR (40)   NULL,
+    [REFERRAL_PARTNER__C]           NVARCHAR (18)   NULL,
+    [RESELLER_CONTACT__C]           NVARCHAR (18)   NULL,
+    [RESELLER__C]                   NVARCHAR (18)   NULL,
+    [SALES_REP__C]                  NVARCHAR (18)   NULL,
+    [STATUS__C]                     NVARCHAR (80)   NULL,
+    [TYPE__C]                       NVARCHAR (255)  NULL,
+    [BILL_TO_ACCOUNT_TYPE__C]       NVARCHAR (1300) NULL,
+    [RELAYWARE_ID__C]               DECIMAL (18)    NULL,
+    [HIDDEN_ADMIN_TEXT_FIELD__C]    NVARCHAR (255)  NULL,
+    [SHIPPING_COST__C]              DECIMAL (10, 2) NULL,
+    [PROMOTION_CODE__C]             NVARCHAR (80)   NULL,
+    [ORIGINAL_NS_INTERNAL_ID__C]    NVARCHAR (8)    NULL,
+    [NEW_CARBONITE_NETSUITE_ID__C]  NVARCHAR (8)    NULL,
+    [POSTING_PERIOD__C]             NVARCHAR (20)   NULL
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [x1609191651172EV_SF_TRANSACTIO]
+    ON [dbo].[EV_SF_TRANSACTION__C]([ID] ASC);
+

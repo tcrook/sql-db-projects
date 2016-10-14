@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[NSCARB_PRICING_GROUPS] (
+    [NAME]             NVARCHAR (60) NULL,
+    [PRICING_GROUP_ID] FLOAT (53)    NULL
+);
+

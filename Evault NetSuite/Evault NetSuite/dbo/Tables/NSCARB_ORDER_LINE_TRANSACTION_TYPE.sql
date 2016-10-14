@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[NSCARB_ORDER_LINE_TRANSACTION_TYPE] (
+    [DATE_CREATED]                   DATETIME2 (7)  NULL,
+    [IS_RECORD_INACTIVE]             NVARCHAR (1)   NULL,
+    [LAST_MODIFIED_DATE]             DATETIME2 (7)  NULL,
+    [LIST_ID]                        FLOAT (53)     NULL,
+    [LIST_ITEM_NAME]                 NVARCHAR (999) NULL,
+    [ORDER_LINE_TRANSACTION_TYPE_EX] NVARCHAR (255) NULL
+);
+

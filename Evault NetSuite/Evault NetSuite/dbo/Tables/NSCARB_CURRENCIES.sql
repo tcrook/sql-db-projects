@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[NSCARB_CURRENCIES] (
+    [CURRENCY_EXTID]     NVARCHAR (255) NULL,
+    [CURRENCY_ID]        FLOAT (53)     NULL,
+    [DATE_LAST_MODIFIED] DATETIME2 (7)  NULL,
+    [IS_INACTIVE]        NVARCHAR (3)   NULL,
+    [NAME]               NVARCHAR (105) NULL,
+    [PRECISION_0]        FLOAT (53)     NULL,
+    [SYMBOL]             NVARCHAR (4)   NULL
+);
+

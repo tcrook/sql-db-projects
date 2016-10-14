@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[NSCARB_DELEGATION_OF_AUTHORITY_CM] (
+    [DATE_CREATED]                   DATETIME2 (7)  NULL,
+    [DELEGATION_OF_AUTHORITY__CM_EX] NVARCHAR (255) NULL,
+    [DELEGATION_OF_AUTHORITY__CM_ID] FLOAT (53)     NULL,
+    [DELEGATION_OF_AUTHORITY__CM_NA] NVARCHAR (999) NULL,
+    [IS_INACTIVE]                    NVARCHAR (1)   NULL,
+    [LAST_MODIFIED_DATE]             DATETIME2 (7)  NULL,
+    [MANAGER_ID]                     FLOAT (53)     NULL,
+    [N_2ND_TIER_MANAGER_ID]          FLOAT (53)     NULL,
+    [PARENT_ID]                      FLOAT (53)     NULL,
+    [REBILL_INVOICE_NEEDED]          NVARCHAR (1)   NULL,
+    [STARTING_AMOUNT]                FLOAT (53)     NULL
+);
+

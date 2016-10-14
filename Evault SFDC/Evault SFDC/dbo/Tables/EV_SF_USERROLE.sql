@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[EV_SF_USERROLE] (
+    [ID]                               NVARCHAR (18) NULL,
+    [NAME]                             NVARCHAR (80) NULL,
+    [PARENTROLEID]                     NVARCHAR (18) NULL,
+    [ROLLUPDESCRIPTION]                NVARCHAR (80) NULL,
+    [OPPORTUNITYACCESSFORACCOUNTOWNER] NVARCHAR (40) NULL,
+    [CASEACCESSFORACCOUNTOWNER]        NVARCHAR (40) NULL,
+    [CONTACTACCESSFORACCOUNTOWNER]     NVARCHAR (40) NULL,
+    [FORECASTUSERID]                   NVARCHAR (18) NULL,
+    [MAYFORECASTMANAGERSHARE]          INT           NULL,
+    [LASTMODIFIEDDATE]                 DATETIME      NULL,
+    [LASTMODIFIEDBYID]                 NVARCHAR (18) NULL,
+    [SYSTEMMODSTAMP]                   DATETIME      NULL,
+    [DEVELOPERNAME]                    NVARCHAR (80) NULL,
+    [PORTALACCOUNTID]                  NVARCHAR (18) NULL,
+    [PORTALTYPE]                       NVARCHAR (40) NULL,
+    [PORTALROLE]                       NVARCHAR (40) NULL,
+    [PORTALACCOUNTOWNERID]             NVARCHAR (18) NULL
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [x1609191751376EV_SF_USERROLE_I]
+    ON [dbo].[EV_SF_USERROLE]([ID] ASC);
+
