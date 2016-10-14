@@ -498,5 +498,6 @@
     <Build Include="Security\import.sql" />
     <Build Include="Security\zRev2.sql" />
     <Build Include="Security\Permissions.sql" />
+    <Build Include="dbo\Tables\t1.sql" />
   </ItemGroup>
 </Project>
